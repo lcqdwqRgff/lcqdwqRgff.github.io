@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.rectangle{
+	width: 1024px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: white;
+	opacity: 0.5;
+	border-radius: 25px;
+	margin-top: 85px;
+	z-index: 2;
+}
+.bkcontainer {
+	position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.bkimg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/scenery.jpg");
+    background-repeat:no-repeat;
+	z-index: -1;
+	background-size: cover;
+	opacity: 0.85;
+}
+.bkimg::after {
+ 	content: "";
+ 	position: fixed;
+ 	top: 0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-image: url("../img/scenery.jpg");
+	background-repeat:no-repeat;
+ 	background: rgba(0, 0, 0, 0.4);
+ 	z-index: 1;
+}
+.cap-div{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	float: left;
+}
+.caption{
+	position: absolute;
+	z-index: 10;
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	top: 165px;
+	color: white;
+}
